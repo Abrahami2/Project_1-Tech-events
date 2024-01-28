@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Audiowide&display=swap');
+
+body {
+  background-image: url('/pics/field-0.8s-1920px.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.app-container {
+  text-align: center;
+  color: #39ff14; 
+  margin: 20px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0f0; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #0f0; 
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-image {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-bottom: 1px solid #0f0; 
+}
+
+
+.event-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.6rem;
+  color: #19f9d8; /* Neon title color */
+}
+
+.event-card p {
+  padding: 0 1rem 1rem;
+  color: #7fdbca; /* Soft neon text color */
+}
+
+.view-button {
+  display: block; /* Full-width button */
+  margin: 1rem auto;
+  padding: 0.8rem 0;
+  width: 80%;
+  background: linear-gradient(45deg, #f01390, #03a9f4); /* Gradient button */
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 15px #0f0; /* Neon glow */
+  font-family: 'Audiowide', cursive;
+  text-transform: uppercase; /* Capitalized text for buttons */
+  transition: background 0.3s ease;
+}
+
+.view-button:hover {
+  background: linear-gradient(45deg, #03a9f4, #f01390); /* Inverted gradient on hover */
+}
+
+/* Adjust grid columns for responsiveness */
+@media (max-width: 1200px) {
+  .events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.app-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #fff; /* or any color you prefer */
+  background-color: #00000025; /* or any color you prefer */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
