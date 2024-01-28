@@ -15,6 +15,6 @@ This project involves creating a React app that showcases a variety of tech even
 
 ## Screenshot:
 
-![Tech Community Events App Screenshot](https://imgur.com/a/Q0FFsad)
+![](https://github.com/Abrahami2/Project_1-Tech-events/blob/main/Project_1_Community-Board/pics/project1techevent'.gif)
 
 For full details on the app's functionality and features, as well as instructions on how to set up the project locally, please refer to the full README in the project repository.
